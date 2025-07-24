@@ -1,13 +1,13 @@
 ---
 # Display name
-title: 吳健雄
+title: Ruidong Zhang
 
 # Name pronunciation (optional)
-name_pronunciation: Chien Shiung Wu
+# name_pronunciation: Chien Shiung Wu
 
 # Full name (for SEO)
-first_name: Shiung Wu
-last_name: Chien
+first_name: Ruidong
+last_name: Zhang
 
 # Status emoji
 status:
@@ -20,92 +20,65 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Chief Scientist
+role: Master of Computer Science
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: OpenAI
-    url: https://openai.com/
+  - name: University of Science and Technology of China
+    url: https://www.ustc.edu/
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'mailto:your-email@example.com'
+    url: 'mailto:zread258@gmail.com'
     label: E-mail Me
-  - icon: brands/x
-    url: https://twitter.com/GetResearchDev
-  - icon: brands/instagram
-    url: https://www.instagram.com/
+  # - icon: brands/x
+  #   url: https://twitter.com/GetResearchDev
+  # - icon: brands/instagram
+  #   url: https://www.instagram.com/
   - icon: brands/github
-    url: https://github.com/gcushen
-  - icon: brands/linkedin
-    url: https://www.linkedin.com/
-  - icon: academicons/google-scholar
-    url: https://scholar.google.com/
-  - icon: academicons/orcid
-    url: https://orcid.org/
+    url: https://github.com/zread258
+  # - icon: brands/linkedin
+  #   url: https://www.linkedin.com/
+  # - icon: academicons/google-scholar
+  #   url: https://scholar.google.com/
+  # - icon: academicons/orcid
+  #   url: https://orcid.org/
 
 interests:
-  - Artificial Intelligence
-  - Computational Linguistics
-  - Information Retrieval
+  - Computer Architecture
+  - AI Complier
 
 education:
-  - area: PhD Artificial Intelligence
-    institution: Stanford University
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+  - area: Master in Computer Science
+    institution: University of Science and Technology of China
+    date_start: 2025-09-09
+    date_end: 2028-06-30
+  - area: BSc in Computer Science
+    institution: University of Electronic Science and Technology of China
+    date_start: 2021-08-26
+    date_end: 2025-06-30
     summary: |
-      Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
-    button:
-      text: 'Read Thesis'
-      url: 'https://example.com'
-  - area: MEng Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      GPA: 3.8/4.0
-
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - area: BSc Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      GPA: 3.4/4.0
-      
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      GPA: 3.84/4.0
 work:
-  - position: Director of Cloud Infrastructure
-    company_name: GenCoin
-    company_url: ''
+  - position: AI Complier Develop Intern
+    company_name: Beijing Houmo Technology Co.
+    company_url: 'www.houmoai.com'
     company_logo: ''
-    date_start: 2021-01-01
-    date_end: ''
+    date_start: 2025-04-07
+    date_end: '2025-07-18'
     summary: |2-
-      Responsibilities include:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - position: Backend Software Engineer
-    company_name: X
-    company_url: ''
-    company_logo: ''
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      Responsibilities include:
-      - Migrated infrastructure to a new data center
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      Deeply involved in the development and optimization of core modules for a neural network compiler targeting proprietary AI accelerators, with a focus on expanding model coverage, enhancing performance, and ensuring stability.
+
+      Key Achievements & Responsibilities:
+      - Operator Library Expansion: Led the end-to-end implementation of 44 standard ONNX operators, spanning the entire stack from frontend MLIR dialect definition and mid-level pattern rewriting to backend hardware-specific primitive implementation. This work substantially broadened the compiler's capabilities, enabling support for advanced models like Vision Transformer (ViT).
+
+      - Low-Level Hardware Primitive Development: Developed and optimized low-level operator primitives for custom AI hardware featuring RISC-V Vector (RVV) extensions. I independently authored vectorized (RVV) implementations for bitwise binary operators, introduced foundational support for new data types (e.g., uint), and implemented safety mechanisms to prevent undefined behavior in bit-shift operations.
+
+      - Compiler Architecture & Optimization Strategy: Leveraged MLIR's declarative pattern rewriting framework to efficiently decompose complex operators (e.g., PReLU, Sign) into a combination of simpler, hardware-friendly primitives, improving compiler modularity and extensibility. Furthermore, I architected and integrated a new PostFrontend compilation stage, laying the groundwork for advanced graph-level optimizations like operator fusion.
+
+      - Automated Testing & Validation Framework: Designed and implemented a comprehensive automated testing and validation framework. This included developing scripts to auto-generate single-operator test cases and establishing a golden-generation pipeline using ONNX Runtime for standard models. This two-tiered system ensures both operator-level and model-level correctness, guaranteeing the integrity of the compiler through continuous development.
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
@@ -141,14 +114,6 @@ skills:
         percent: 80
         icon: camera
 
-languages:
-  - name: English
-    percent: 100
-  - name: Chinese
-    percent: 75
-  - name: Portuguese
-    percent: 25
-
 # Awards.
 #   Add/remove as many awards below as you like.
 #   Only `title`, `awarder`, and `date` are required.
@@ -183,4 +148,4 @@ awards:
 
 ## About Me
 
-Chien Shiung Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+I am a 1st-year master student in computer science driven by a passion for building efficient computing platforms. My interest spans both Computer Architecture and AI Compiler, with a core focus on unlocking performance through hardware-software co-design.
