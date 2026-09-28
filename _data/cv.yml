@@ -27,18 +27,18 @@ cv:
 
     Research Experience:
       - company: Shanghai Artificial Intelligence Laboratory
-        position: Research Intern — High-Performance Compilation
+        position: Research Intern
         location: Shanghai, China
         start_date: 2026-01
         end_date: 2026-07
         highlights:
-          - Worked on MLIR-based compiler infrastructure and performance optimization for GPU-intensive workloads, covering compiler IRs, transformations, lowering, and GPU code generation.
-          - Implemented and evaluated compiler transformations related to program rewriting and memory-system optimization.
-          - Profiled generated CUDA workloads across GPU platforms using low-level performance analysis, studying memory traffic, synchronization, parallelism, and occupancy bottlenecks.
+          - Designed and implemented an MLIR-based domain-specific compiler for GPU-intensive graphics workloads, preserving high-level application semantics through optimization and CUDA lowering.
+          - Developed semantics-guided compiler optimizations that coordinate program rewriting, computation placement, and GPU memory decisions across the compilation pipeline.
+          - Evaluated the compiler across representative workloads and multiple GPU architectures against hand-written CUDA and existing high-level programming systems, demonstrating substantial performance gains while improving programmability.
 
     Industry Experience:
-      - company: Ubiquant Technology
-        position: Quantitative Implementation Intern — LLM Systems
+      - company: Ubiquant Technology Co.
+        position: Quantitative Implementation Intern
         location: Shanghai, China
         start_date: 2026-08
         end_date: 2026-09
@@ -46,7 +46,7 @@ cv:
           - Evaluated multi-node, multi-GPU LLM serving with SGLang and vLLM under prefill–decode disaggregation, characterizing TTFT/TPOT trade-offs across distributed execution configurations.
           - Investigated Mooncake-based KV-cache transfer and profiled compute, memory, and communication bottlenecks across prefill/decode placement strategies.
 
-      - company: Houmo Technology
+      - company: Houmo Technology Co.
         position: AI Compiler Development Intern
         location: Nanjing, China
         start_date: 2025-04
@@ -56,10 +56,13 @@ cv:
           - Built MLIR lowering and validation pipelines that mapped ONNX operators to backend execution constraints and regression-tested outputs against ONNX Runtime.
 
     Projects:
-      - name: Compiler Techniques for Stateful Simulation — Ongoing
+      - name: Compiler-Assisted Execution for Extensible Block-Diagram Simulation
         start_date: 2026-06
         end_date: present
-        summary: Exploring compiler techniques for repeated stateful simulation workloads, with an emphasis on identifying reusable computation while preserving numerical-solver and runtime semantics.
+        highlights:
+          - Designed a compiler-assisted execution framework that lowers dynamically dispatched block-diagram models into compiled execution regions while preserving solver and state-update semantics.
+          - Developed dependency-aware specialization to avoid redundant model evaluation during multi-stage ODE integration, compiling only computations affected by intermediate solver states.
+          - Built a JIT execution path with cached native code and runtime fallback, supporting incremental compilation of eligible operator regions without replacing the existing simulation runtime.
 
       - name: RISC-V Processor Design & Architectural Validation
         start_date: 2024-04
@@ -78,5 +81,6 @@ cv:
         details: CUDA, ONNX, PyTorch, SGLang, vLLM
 
     Selected Honors:
-      - bullet: IEEEXtreme Programming Competition — Top 5% Worldwide
+      - bullet: University of Science and Technology of China — First-Class Academic Scholarship
       - bullet: HP Responsible Entrepreneurship Competition — First Prize
+      - bullet: IEEE Extreme Programming Competition — Top 5% Worldwide

@@ -100,6 +100,6 @@ _styles: |
 </section>
 
 <section class="cv-section" aria-labelledby="cv-honors">
-  <h2 id="cv-honors">Selected Honors</h2>
+  <h2 id="cv-honors">Awards</h2>
   <ul>{% for entry in cv.sections["Selected Honors"] %}<li>{{ entry.bullet }}</li>{% endfor %}</ul>
 </section>

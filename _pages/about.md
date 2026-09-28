@@ -48,7 +48,7 @@ _styles: |
     <div class="intro-copy">
       <p>I am an M.S. student at USTC working at the intersection of compilers and computer systems. My research focuses on compiler abstractions that preserve application structure and generate efficient code for heterogeneous hardware.</p>
 
-      <p>My recent work spans MLIR/LLVM-based compilation, GPU performance analysis, multi-GPU AI inference, and processor design. Before joining USTC, I received my B.S. in Computer Science from UESTC.</p>
+      <p>My recent work spans MLIR-based domain-specific compilation, GPU and multi-GPU AI systems, compiler-assisted simulation, and processor design. Before joining USTC, I received my B.S. in Computer Science from UESTC.</p>
     </div>
     <div class="link-row" aria-label="Contact and profile links">
       <a class="quiet-button" href="mailto:zread258@gmail.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Email</a>
@@ -85,9 +85,10 @@ _styles: |
 <section class="home-section" aria-labelledby="selected-experience">
   <h2 class="section-heading" id="selected-experience">Selected Work</h2>
   <div class="work-list">
-    <div class="work-row"><div><div class="work-org">Shanghai AI Laboratory</div><div class="work-meta">Research Intern · High-Performance Compilation · 2026</div></div><p>MLIR-based compiler infrastructure, transformations, lowering, GPU code generation, and performance analysis. One manuscript from this work is currently under double-blind review.</p></div>
-    <div class="work-row"><div><div class="work-org">Ubiquant Technology</div><div class="work-meta">Quantitative Implementation Intern · 2026</div></div><p>Multi-node, multi-GPU LLM serving with SGLang/vLLM, prefill–decode disaggregation, and Mooncake KV-cache transfer.</p></div>
-    <div class="work-row"><div><div class="work-org">Houmo Technology</div><div class="work-meta">AI Compiler Development Intern · 2025</div></div><p>Implemented 44 ONNX operators through MLIR lowering for a RISC-V-based compute-in-memory NPU.</p></div>
+    <div class="work-row"><div><div class="work-org">Shanghai AI Laboratory</div><div class="work-meta">Research Intern · 2026</div></div><p>Designed an MLIR-based domain-specific compiler for GPU-intensive graphics workloads, including semantics-guided optimization and CUDA lowering. One manuscript from this work is currently under double-blind review.</p></div>
+    <div class="work-row"><div><div class="work-org">Compiler-Assisted Simulation</div><div class="work-meta">Ongoing research · 2026–Present</div></div><p>Compiler-assisted execution for extensible block-diagram simulation, with dependency-aware specialization, JIT-compiled regions, and runtime fallback.</p></div>
+    <div class="work-row"><div><div class="work-org">Ubiquant Technology Co.</div><div class="work-meta">Quantitative Implementation Intern · 2026</div></div><p>Multi-node, multi-GPU LLM serving with SGLang/vLLM, prefill–decode disaggregation, and Mooncake KV-cache transfer.</p></div>
+    <div class="work-row"><div><div class="work-org">Houmo Technology Co.</div><div class="work-meta">AI Compiler Development Intern · 2025</div></div><p>Implemented 44 ONNX operators through MLIR lowering for a RISC-V-based compute-in-memory NPU.</p></div>
   </div>
   <p><a class="text-link" href="{{ '/experience/' | relative_url }}">Full experience</a></p>
 </section>

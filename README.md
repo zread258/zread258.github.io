@@ -44,13 +44,15 @@ The internship-availability sentence is controlled by `internship_availability` 
 
 ## Update the CV
 
-Edit `_data/cv.yml`, then render the public PDF with:
+Replace `assets/pdf/Ruidong_Zhang_CV.pdf` with the exact public CV PDF, keeping the filename unchanged so its URL remains stable. Then update `_data/cv.yml`, `_pages/about.md`, and `_pages/experience.md` so the web content matches the document.
+
+The optional `Render a CV` workflow is manual-only. It can regenerate a PDF from `_data/cv.yml` when explicitly requested, but normal pushes do not overwrite the supplied PDF. To render it locally:
 
 ```bash
 rendercv render _data/cv.yml --design assets/rendercv/design.yaml --locale-catalog assets/rendercv/locale.yaml --settings assets/rendercv/settings.yaml
 ```
 
-The stable public file is `assets/pdf/Ruidong_Zhang_CV.pdf`. The `Render a CV` GitHub Action also regenerates it whenever the CV data or RenderCV configuration changes. Keep the public PDF consistent with the website's disclosure policy.
+The stable public URL is `/assets/pdf/Ruidong_Zhang_CV.pdf`.
 
 ## Add a publication later
 

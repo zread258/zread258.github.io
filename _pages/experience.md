@@ -21,8 +21,8 @@ _styles: |
   <section class="experience-entry" aria-labelledby="ubiquant">
     <div class="experience-date">Aug. 2026 – Sep. 2026</div>
     <div>
-      <h2 id="ubiquant">Ubiquant Technology</h2>
-      <p class="experience-role">Quantitative Implementation Intern — LLM Systems</p>
+      <h2 id="ubiquant">Ubiquant Technology Co.</h2>
+      <p class="experience-role">Quantitative Implementation Intern</p>
       <p class="experience-location">Shanghai, China</p>
       <ul>
         <li>Evaluated multi-node, multi-GPU LLM serving with SGLang and vLLM under prefill–decode disaggregation, characterizing TTFT/TPOT trade-offs across distributed execution configurations.</li>
@@ -35,12 +35,12 @@ _styles: |
     <div class="experience-date">Jan. 2026 – Jul. 2026</div>
     <div>
       <h2 id="shanghai-ai-lab">Shanghai Artificial Intelligence Laboratory</h2>
-      <p class="experience-role">Research Intern — High-Performance Compilation</p>
+      <p class="experience-role">Research Intern</p>
       <p class="experience-location">Shanghai, China</p>
       <ul>
-        <li>Worked on MLIR-based compiler infrastructure and performance optimization for GPU-intensive workloads, covering compiler IRs, transformations, lowering, and GPU code generation.</li>
-        <li>Implemented and evaluated compiler transformations related to program rewriting and memory-system optimization.</li>
-        <li>Profiled generated CUDA workloads across GPU platforms using low-level performance analysis, studying memory traffic, synchronization, parallelism, and occupancy bottlenecks.</li>
+        <li>Designed and implemented an MLIR-based domain-specific compiler for GPU-intensive graphics workloads, preserving high-level application semantics through optimization and CUDA lowering.</li>
+        <li>Developed semantics-guided compiler optimizations that coordinate program rewriting, computation placement, and GPU memory decisions across the compilation pipeline.</li>
+        <li>Evaluated the compiler across representative workloads and multiple GPU architectures against hand-written CUDA and existing high-level programming systems, demonstrating substantial performance gains while improving programmability.</li>
         <li>One manuscript resulting from this work is currently under double-blind review; identifying details will be added after the review period.</li>
       </ul>
     </div>
@@ -49,7 +49,7 @@ _styles: |
   <section class="experience-entry" aria-labelledby="houmo">
     <div class="experience-date">Apr. 2025 – Jul. 2025</div>
     <div>
-      <h2 id="houmo">Houmo Technology</h2>
+      <h2 id="houmo">Houmo Technology Co.</h2>
       <p class="experience-role">AI Compiler Development Intern</p>
       <p class="experience-location">Nanjing, China</p>
       <ul>

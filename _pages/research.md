@@ -28,6 +28,8 @@ _styles: |
 
     <p>More broadly, I study how the choice and organization of compiler IRs influence where an optimization can be expressed and how reliably it can be composed with later lowering passes. This includes domain-specific languages, compiler analyses, structured program rewriting, optimization placement, and target-aware code generation. I value compiler designs that make semantic assumptions explicit and expose a clear path from high-level structure to efficient executable code.</p>
 
+    <p>My ongoing work also explores compiler-assisted execution for extensible block-diagram simulation. It combines dependency-aware specialization and JIT-compiled execution regions with runtime fallback while preserving solver and state-update semantics.</p>
+
   </div>
 </section>
 
