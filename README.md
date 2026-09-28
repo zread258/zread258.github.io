@@ -1,6 +1,6 @@
 # Ruidong Zhang — Academic Homepage
 
-A research-oriented personal website built from the official [al-folio](https://github.com/alshedivat/al-folio) v1.2 template. The site is configured for a root GitHub Pages repository named `<GITHUB_USERNAME>.github.io`.
+A research-oriented personal website built from the official [al-folio](https://github.com/alshedivat/al-folio) v1.2 template. The site is configured for the root GitHub Pages repository `zread258.github.io`.
 
 ## Install and preview
 
@@ -69,12 +69,10 @@ No portrait was supplied with this workspace, so the homepage currently uses a t
 
 ## GitHub Pages deployment
 
-Push the repository to `<GITHUB_USERNAME>/<GITHUB_USERNAME>.github.io`, replace `GITHUB_USERNAME` in `_config.yml`, and set Pages to deploy from the `gh-pages` branch at `/ (root)`. `.github/workflows/deploy.yml` builds the production site on pushes to `main` or `master` and publishes `_site/` to `gh-pages`.
+Push the repository to `zread258/zread258.github.io` and set Pages to deploy from the `gh-pages` branch at `/ (root)`. `.github/workflows/deploy.yml` builds the production site on pushes to `main` or `master` and publishes `_site/` to `gh-pages`.
 
 ## Remaining placeholders
 
-- `<GITHUB_USERNAME>` in the repository name and `_config.yml`
-- `<GITHUB_URL>` in `_data/profile.yml`
 - `<ORCID_URL>` in `_data/profile.yml`
 - `<GOOGLE_SCHOLAR_URL>` in `_data/profile.yml`
 - `<LINKEDIN_URL>` in `_data/profile.yml`, if desired
