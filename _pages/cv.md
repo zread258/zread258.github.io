@@ -50,9 +50,23 @@ _styles: |
   {% endfor %}
 </section>
 
-<section class="cv-section" aria-labelledby="cv-experience">
-  <h2 id="cv-experience">Experience</h2>
-  {% for entry in cv.sections.Experience %}
+<section class="cv-section" aria-labelledby="cv-research-experience">
+  <h2 id="cv-research-experience">Research Experience</h2>
+  {% for entry in cv.sections["Research Experience"] %}
+    <div class="cv-entry">
+      <div class="cv-date">{{ entry.start_date | date: "%b. %Y" }} – {{ entry.end_date | date: "%b. %Y" }}</div>
+      <div>
+        <h3>{{ entry.company }}</h3>
+        <p class="cv-subtitle">{{ entry.position }} · {{ entry.location }}</p>
+        <ul>{% for highlight in entry.highlights %}<li>{{ highlight }}</li>{% endfor %}</ul>
+      </div>
+    </div>
+  {% endfor %}
+</section>
+
+<section class="cv-section" aria-labelledby="cv-industry-experience">
+  <h2 id="cv-industry-experience">Industry Experience</h2>
+  {% for entry in cv.sections["Industry Experience"] %}
     <div class="cv-entry">
       <div class="cv-date">{{ entry.start_date | date: "%b. %Y" }} – {{ entry.end_date | date: "%b. %Y" }}</div>
       <div>
@@ -68,11 +82,13 @@ _styles: |
   <h2 id="cv-projects">Projects</h2>
   {% for entry in cv.sections.Projects %}
     <div class="cv-entry">
-      <div></div>
+      <div class="cv-date">
+        {% if entry.start_date %}{{ entry.start_date | date: "%b. %Y" }} – {% if entry.end_date == "present" %}Present{% else %}{{ entry.end_date | date: "%b. %Y" }}{% endif %}{% endif %}
+      </div>
       <div>
         <h3>{{ entry.name }}</h3>
         <p class="cv-subtitle">{{ entry.summary }}</p>
-        <ul>{% for highlight in entry.highlights %}<li>{{ highlight }}</li>{% endfor %}</ul>
+        {% if entry.highlights %}<ul>{% for highlight in entry.highlights %}<li>{{ highlight }}</li>{% endfor %}</ul>{% endif %}
       </div>
     </div>
   {% endfor %}

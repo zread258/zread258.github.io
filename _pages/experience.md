@@ -25,8 +25,8 @@ _styles: |
       <p class="experience-role">Quantitative Implementation Intern — LLM Systems</p>
       <p class="experience-location">Shanghai, China</p>
       <ul>
-        <li>Worked on multi-node, multi-GPU LLM inference systems, including prefill–decode disaggregation and distributed execution.</li>
-        <li>Used NVIDIA profiling tools to analyze GPU kernels and system-level bottlenecks, focusing on compute, memory, and communication behavior.</li>
+        <li>Evaluated multi-node, multi-GPU LLM serving with SGLang and vLLM under prefill–decode disaggregation, characterizing TTFT/TPOT trade-offs across distributed execution configurations.</li>
+        <li>Investigated Mooncake-based KV-cache transfer and profiled compute, memory, and communication bottlenecks across prefill/decode placement strategies.</li>
       </ul>
     </div>
   </section>
@@ -53,8 +53,8 @@ _styles: |
       <p class="experience-role">AI Compiler Development Intern</p>
       <p class="experience-location">Nanjing, China</p>
       <ul>
-        <li>Implemented 44 ONNX operators end-to-end, from MLIR dialect definitions and pattern rewriting to hardware-specific backend primitives.</li>
-        <li>Built an automated compiler-validation pipeline with generated operator tests and ONNX Runtime golden outputs for end-to-end correctness checking.</li>
+        <li>Implemented 44 ONNX operators end-to-end for a RISC-V-based compute-in-memory NPU, spanning MLIR dialect definitions, pattern rewriting, and lowering to accelerator-specific primitives.</li>
+        <li>Built MLIR lowering and validation pipelines that mapped ONNX operators to backend execution constraints and regression-tested outputs against ONNX Runtime.</li>
       </ul>
     </div>
   </section>

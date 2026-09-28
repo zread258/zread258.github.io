@@ -25,16 +25,7 @@ cv:
         highlights:
           - "GPA: 3.84 / 4.00"
 
-    Experience:
-      - company: Ubiquant Technology
-        position: Quantitative Implementation Intern — LLM Systems
-        location: Shanghai, China
-        start_date: 2026-08
-        end_date: 2026-09
-        highlights:
-          - Worked on multi-node, multi-GPU LLM inference systems, including prefill–decode disaggregation and distributed execution.
-          - Used NVIDIA profiling tools to analyze GPU kernels and system-level bottlenecks, focusing on compute, memory, and communication behavior.
-
+    Research Experience:
       - company: Shanghai Artificial Intelligence Laboratory
         position: Research Intern — High-Performance Compilation
         location: Shanghai, China
@@ -45,29 +36,46 @@ cv:
           - Implemented and evaluated compiler transformations related to program rewriting and memory-system optimization.
           - Profiled generated CUDA workloads across GPU platforms using low-level performance analysis, studying memory traffic, synchronization, parallelism, and occupancy bottlenecks.
 
+    Industry Experience:
+      - company: Ubiquant Technology
+        position: Quantitative Implementation Intern — LLM Systems
+        location: Shanghai, China
+        start_date: 2026-08
+        end_date: 2026-09
+        highlights:
+          - Evaluated multi-node, multi-GPU LLM serving with SGLang and vLLM under prefill–decode disaggregation, characterizing TTFT/TPOT trade-offs across distributed execution configurations.
+          - Investigated Mooncake-based KV-cache transfer and profiled compute, memory, and communication bottlenecks across prefill/decode placement strategies.
+
       - company: Houmo Technology
         position: AI Compiler Development Intern
         location: Nanjing, China
         start_date: 2025-04
         end_date: 2025-07
         highlights:
-          - Implemented 44 ONNX operators end-to-end, from MLIR dialect definitions and pattern rewriting to hardware-specific backend primitives.
-          - Built an automated compiler-validation pipeline with generated operator tests and ONNX Runtime golden outputs for end-to-end correctness checking.
+          - Implemented 44 ONNX operators end-to-end for a RISC-V-based compute-in-memory NPU, spanning MLIR dialect definitions, pattern rewriting, and lowering to accelerator-specific primitives.
+          - Built MLIR lowering and validation pipelines that mapped ONNX operators to backend execution constraints and regression-tested outputs against ONNX Runtime.
 
     Projects:
-      - name: RISC-V Processor Design & Validation
-        summary: Designed and implemented a five-stage RV32E/RV32I processor and deployed it on an Artix-7 FPGA to boot RT-Thread.
+      - name: Compiler Techniques for Stateful Simulation — Ongoing
+        start_date: 2026-06
+        end_date: present
+        summary: Exploring compiler techniques for repeated stateful simulation workloads, with an emphasis on identifying reusable computation while preserving numerical-solver and runtime semantics.
+
+      - name: RISC-V Processor Design & Architectural Validation
+        start_date: 2024-04
+        end_date: 2025-10
+        summary: Designed a five-stage RV32E/RV32I processor and deployed it on an Artix-7 FPGA to boot RT-Thread.
         highlights:
-          - Added forwarding, hazard handling, CSR/exception/interrupt support, and an AXI4-based memory subsystem.
-          - Developed an RV32IM emulator and instruction-level differential-testing infrastructure against Spike.
+          - Added forwarding and hazard control, branch handling, CSR/exception/interrupt support, and an AXI4 memory subsystem.
+          - Built an RV32IM emulator with breakpoints, disassembly, and device simulation, together with Spike differential testing for ISA-level validation.
 
     Technical Skills:
       - label: Programming
-        details: C++, C, Python, CUDA C++, Verilog
-      - label: Compilers & Systems
-        details: MLIR, LLVM, CUDA, PyTorch, ONNX, Linux
-      - label: Profiling & Development
-        details: NVIDIA Nsight Compute, Git, Docker, Verilator, Vivado
+        details: C++, C, Python, CUDA, Verilog
+      - label: Compilers
+        details: MLIR, LLVM
+      - label: GPU & AI Systems
+        details: CUDA, ONNX, PyTorch, SGLang, vLLM
 
     Selected Honors:
       - bullet: IEEEXtreme Programming Competition — Top 5% Worldwide

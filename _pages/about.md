@@ -86,8 +86,8 @@ _styles: |
   <h2 class="section-heading" id="selected-experience">Selected Work</h2>
   <div class="work-list">
     <div class="work-row"><div><div class="work-org">Shanghai AI Laboratory</div><div class="work-meta">Research Intern · High-Performance Compilation · 2026</div></div><p>MLIR-based compiler infrastructure, transformations, lowering, GPU code generation, and performance analysis. One manuscript from this work is currently under double-blind review.</p></div>
-    <div class="work-row"><div><div class="work-org">Ubiquant Technology</div><div class="work-meta">Quantitative Implementation Intern · 2026</div></div><p>Multi-node, multi-GPU LLM inference and profiling of compute, memory, and communication bottlenecks.</p></div>
-    <div class="work-row"><div><div class="work-org">Houmo Technology</div><div class="work-meta">AI Compiler Development Intern · 2025</div></div><p>Implemented 44 ONNX operators through MLIR rewriting and hardware-specific backend lowering.</p></div>
+    <div class="work-row"><div><div class="work-org">Ubiquant Technology</div><div class="work-meta">Quantitative Implementation Intern · 2026</div></div><p>Multi-node, multi-GPU LLM serving with SGLang/vLLM, prefill–decode disaggregation, and Mooncake KV-cache transfer.</p></div>
+    <div class="work-row"><div><div class="work-org">Houmo Technology</div><div class="work-meta">AI Compiler Development Intern · 2025</div></div><p>Implemented 44 ONNX operators through MLIR lowering for a RISC-V-based compute-in-memory NPU.</p></div>
   </div>
   <p><a class="text-link" href="{{ '/experience/' | relative_url }}">Full experience</a></p>
 </section>
