@@ -1,0 +1,63 @@
+---
+---
+
+@charset "utf-8";
+
+@use "sass:math";
+@use "sass:string";
+@use "variables" with (
+  $max-content-width: {{site.max_width | default: "930px"}}
+);
+
+@use "themes";
+@use "layout";
+@use "typography";
+@use "navbar";
+@use "footer";
+@use "blog";
+@use "publications";
+@use "components";
+@use "utilities";
+@use "tabs";
+@use "teachings";
+@use "typograms";
+
+:root {
+  --global-text-color: #202a33;
+  --global-text-color-light: #5c6873;
+  --global-theme-color: #315b7d;
+  --global-hover-color: #24475f;
+  --global-divider-color: #d9dfe4;
+}
+
+html[data-theme="dark"] {
+  --global-theme-color: #75a7c7;
+  --global-hover-color: #9bc1d8;
+  --global-divider-color: #46515a;
+}
+
+body {
+  line-height: 1.62;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--global-theme-color);
+  outline-offset: 3px;
+}
+
+.post-header .post-title {
+  letter-spacing: -0.018em;
+}
+
+footer a {
+  text-decoration: underline;
+  text-underline-offset: 0.16em;
+}
+
+@media (max-width: 575px) {
+  .container {
+    padding-right: 1.15rem;
+    padding-left: 1.15rem;
+  }
+}

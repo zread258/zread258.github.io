@@ -1,0 +1,7 @@
+# Optional public identity fields. Empty values are intentionally hidden.
+profile_image: "" # TODO: add photo.webp to assets/img/ and set this to photo.webp
+github_url: "" # TODO: <GITHUB_URL>
+orcid_url: "" # TODO: <ORCID_URL>
+scholar_url: "" # TODO: <GOOGLE_SCHOLAR_URL>
+linkedin_url: "" # TODO: <LINKEDIN_URL>, if desired
+internship_availability: false

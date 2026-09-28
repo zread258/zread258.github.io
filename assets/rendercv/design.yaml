@@ -1,0 +1,42 @@
+# for more options, see https://docs.rendercv.com/user_guide/yaml_input_structure/design/
+design:
+  theme: classic
+  page:
+    size: a4
+    top_margin: 0.45in
+    bottom_margin: 0.45in
+    left_margin: 0.55in
+    right_margin: 0.55in
+    show_footer: false
+    show_top_note: false
+  colors:
+    name: rgb(49, 91, 125)
+    headline: rgb(49, 91, 125)
+    connections: rgb(49, 91, 125)
+    section_titles: rgb(49, 91, 125)
+    links: rgb(49, 91, 125)
+  typography:
+    line_spacing: 0.52em
+    alignment: left
+    font_size:
+      body: 10pt
+      name: 28pt
+      headline: 10pt
+      connections: 9.5pt
+      section_titles: 1.3em
+  header:
+    space_below_name: 0.3cm
+    space_below_headline: 0.3cm
+    space_below_connections: 0.38cm
+  section_titles:
+    space_above: 0.3cm
+    space_below: 0.18cm
+  sections:
+    space_between_regular_entries: 0.85em
+    space_between_text_based_entries: 0.25em
+    show_time_spans_in: []
+  entries:
+    date_and_location_width: 3.7cm
+    space_between_columns: 0.08cm
+    highlights:
+      space_between_bullet_and_text: 0.35em

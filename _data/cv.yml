@@ -1,0 +1,74 @@
+cv:
+  name: Ruidong Zhang
+  headline: M.S. Student in Computer Science
+  email: zread258@gmail.com
+  location: Hefei, China
+
+  sections:
+    Summary:
+      - Master's student at the University of Science and Technology of China working on compiler systems, GPU and AI systems, and hardware–software co-design.
+
+    Education:
+      - institution: University of Science and Technology of China (USTC)
+        location: Hefei, China
+        area: Computer Science
+        degree: M.S.
+        start_date: 2025-09
+        end_date: present
+
+      - institution: University of Electronic Science and Technology of China (UESTC)
+        location: Chengdu, China
+        area: Computer Science
+        degree: B.S.
+        start_date: 2021-09
+        end_date: 2025-06
+        highlights:
+          - "GPA: 3.84 / 4.00"
+
+    Experience:
+      - company: Ubiquant Technology
+        position: Quantitative Implementation Intern — LLM Systems
+        location: Shanghai, China
+        start_date: 2026-08
+        end_date: 2026-09
+        highlights:
+          - Worked on multi-node, multi-GPU LLM inference systems, including prefill–decode disaggregation and distributed execution.
+          - Used NVIDIA profiling tools to analyze GPU kernels and system-level bottlenecks, focusing on compute, memory, and communication behavior.
+
+      - company: Shanghai Artificial Intelligence Laboratory
+        position: Research Intern — High-Performance Compilation
+        location: Shanghai, China
+        start_date: 2026-01
+        end_date: 2026-07
+        highlights:
+          - Worked on MLIR-based compiler infrastructure and performance optimization for GPU-intensive workloads, covering compiler IRs, transformations, lowering, and GPU code generation.
+          - Implemented and evaluated compiler transformations related to program rewriting and memory-system optimization.
+          - Profiled generated CUDA workloads across GPU platforms using low-level performance analysis, studying memory traffic, synchronization, parallelism, and occupancy bottlenecks.
+
+      - company: Houmo Technology
+        position: AI Compiler Development Intern
+        location: Nanjing, China
+        start_date: 2025-04
+        end_date: 2025-07
+        highlights:
+          - Implemented 44 ONNX operators end-to-end, from MLIR dialect definitions and pattern rewriting to hardware-specific backend primitives.
+          - Built an automated compiler-validation pipeline with generated operator tests and ONNX Runtime golden outputs for end-to-end correctness checking.
+
+    Projects:
+      - name: RISC-V Processor Design & Validation
+        summary: Designed and implemented a five-stage RV32E/RV32I processor and deployed it on an Artix-7 FPGA to boot RT-Thread.
+        highlights:
+          - Added forwarding, hazard handling, CSR/exception/interrupt support, and an AXI4-based memory subsystem.
+          - Developed an RV32IM emulator and instruction-level differential-testing infrastructure against Spike.
+
+    Technical Skills:
+      - label: Programming
+        details: C++, C, Python, CUDA C++, Verilog
+      - label: Compilers & Systems
+        details: MLIR, LLVM, CUDA, PyTorch, ONNX, Linux
+      - label: Profiling & Development
+        details: NVIDIA Nsight Compute, Git, Docker, Verilator, Vivado
+
+    Selected Honors:
+      - bullet: IEEEXtreme Programming Competition — Top 5% Worldwide
+      - bullet: HP Responsible Entrepreneurship Competition — First Prize
